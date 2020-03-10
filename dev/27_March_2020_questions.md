@@ -1,0 +1,15 @@
+# Questions on the current histone gene nomenclature as of 7 March 2020 on the HGNC web site
+## H1 histones
+- Current link to the web-site https://www.genenames.org/data/genegroup/#!/group/1935
+- H1-9P, formely known as HILS1 was originally identified in this paper 12920187, its cDNA was
+isolated and sequences, Figure 7 of the respective paper provides the
+sequnce of human cDNA as:
+atccgcccaggcatgtgcacacacacatgcatatgtgcacgcaccgtgcaggcccgctgtctggcccacaagcgcagccctcctccccaggacacctggcatgttacatgcctccaccatctggcatctccggtccacccctccccggaggaaacaatggggccactgtgacccacacagaattctggtagcctctgaggtcaccacagagataacctcaccaacccctgcaccaagagcacaagtctgtggaggccagccgtgggtgaccgtccttgatcctctttctggccacacagggagagaagcagaaaggcacttcgccactgtctccatcagtgctgttgaactcaaatactgccatgggtggaggccagcagggcagcgtgtccctagcaagacagcgactgggcaacgcacctgtgccaaaccctgccagaagcccagcacgtccaaggtgatcctgagggctgtggcggacaaggggacctgcaagtatgtgtccctggccaccctgaagaaggctgtttccaccacgggctacgacatggcccgaaatgcctatcacttcaagcgtgtgctcaaggggctggtggacaagggctcagcaggctccttcaccctgggcaagaagcaggcctccaagtccaagctcaaggtcaagaggcaacgacagcagaggtggcgctctgggcagcgcccctttggacagcacaggtcactactgggctccaaacaggggcacaagcggcttatcaagggggttcgaagggtggccaagtgccactgcaattaatgaggcaggccaggcaagcagtcaggggtgccaagaccgccattggctcagtgcagtgggaataaaaaaaaaaaaaaaaaaa
+There is a 22 bp insertion in the genome
+
+
+## H2A
+- Why H2AC22 was renamed to H2AW. H2A.W is a histone name in plants according to Talbert et al.
+
+## H3
+- Why cenpa is not included in the list.
