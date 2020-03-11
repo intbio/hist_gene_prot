@@ -1,9 +1,21 @@
 <!--- <script type="text/javascript"> --->
     function format_variant(variant){
         var exclude_variants = ['', 'H1', 'H1.1', 'H1.2', 'H1.3', 'H1.4', 'H1.5', 'H10', 'H2.1', 'H2.2', 'H2A.2', 'H2A.J',
-                                'H2B.M', 'H2B.S ', 'canonical_H3.1', 'canonical_H3.2', 'H2A.B.1', 'H2A.B.2', 'H2A.B.3',
-                                'H2A.Z.1', 'H2A.Z.2', 'H3.Y.1', 'H3.Y.2', 'macroH2A.1', 'macroH2A.2'];
-        var variants_dict = {'cenH3_CENPA': 'cenH3', 'TS_H2A.1': 'H2A.1', 'TS_H2B.1': 'H2B.1'}
+                                'H2B.M', 'H2B.S', '?'];
+        var variants_dict = {'cenH3_CENPA': 'cenH3',
+                             'TS_H2A.1': 'H2A.1',
+                             'TS_H2B.1': 'H2B.1',
+                             'canonical_H3.1': 'canonical_H3',
+                             'canonical_H3.2': 'canonical_H3',
+                             'H2A.B.1': 'H2A.B',
+                             'H2A.B.2': 'H2A.B',
+                             'H2A.B.3': 'H2A.B',
+                             'H2A.Z.1': 'H2A.Z',
+                             'H2A.Z.2': 'H2A.Z',
+                             'H3.Y.1': 'H3.Y',
+                             'H3.Y.2': 'H3.Y',
+                             'macroH2A.1': 'macroH2A',
+                             'macroH2A.2': 'macroH2A'}
         if (!exclude_variants.includes(variant.replace(/ /g, '_')))
             if (variant.replace(/ /g, '_') in variants_dict)
                 return "<a href='/variant/" + variants_dict[variant.replace(/ /g, '_')] + "'>" + variant + "</a>";
@@ -133,12 +145,18 @@
         else
             return ensg_id;
     };
+    function format_enst(enst_id){
+        if (enst_id)
+            return "<a href='https://www.ensembl.org/Homo_sapiens/Transcript/Summary?db=core;t=" + enst_id + "'>" + enst_id + "</a>";
+        else
+            return enst_id;
+    };
     CsvToHtmlTable.init({
         csv_path: "https://intbio.org/hist_gene_prot/human_histones.csv",
         element: 'table-container',
         allow_download: true,
         csv_options: {separator: ',', delimiter: '"'},
         datatables_options: {"paging": false} ,
-        custom_formatting: [[0, format_type], [1, format_variant], [2, format_hgnc], [3, format_ncbi], [4, format_ensg]]
+        custom_formatting: [[0, format_type], [1, format_variant], [2, format_hgnc], [3, format_ncbi], [4, format_ensg], [5, format_enst]]
     });
 <!--- </script> --->
