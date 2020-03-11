@@ -145,12 +145,18 @@
         else
             return ensg_id;
     };
+    function format_enst(enst_id){
+        if (enst_id)
+            return "<a href='https://www.ensembl.org/Homo_sapiens/Transcript/Summary?db=core;t=" + enst_id + "'>" + enst_id + "</a>";
+        else
+            return enst_id;
+    };
     CsvToHtmlTable.init({
         csv_path: "https://intbio.org/hist_gene_prot/human_histones.csv",
         element: 'table-container',
         allow_download: true,
         csv_options: {separator: ',', delimiter: '"'},
         datatables_options: {"paging": false} ,
-        custom_formatting: [[0, format_type], [1, format_variant], [2, format_hgnc], [3, format_ncbi], [4, format_ensg]]
+        custom_formatting: [[0, format_type], [1, format_variant], [2, format_hgnc], [3, format_ncbi], [4, format_ensg], [5, format_enst]]
     });
 <!--- </script> --->
