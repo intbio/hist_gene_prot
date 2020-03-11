@@ -165,7 +165,7 @@
             return refseq_id;
     };
     function format_pmid(pmids){
-        if (pmids) {
+        if (pmids && variant_full.search("^[0-9\s]+$") < 0) {
             pmids_list = pmids.split(" ");
             var links_str = "<a href='https://www.ncbi.nlm.nih.gov/pubmed/" + pmids_list[0] + "'>" + pmids_list[0] + "</a>";
             for (i = 1; i < pmids_list.length; i++) {
