@@ -1,7 +1,10 @@
 <!--- <script type="text/javascript"> --->
     function format_variant(variant){
+        var variant_full = variant.replace(/ /g, '_')
         var exclude_variants = ['', 'H1', 'H1.1', 'H1.2', 'H1.3', 'H1.4', 'H1.5', 'H10', 'H2.1', 'H2.2', 'H2A.2', 'H2A.J',
                                 'H2B.M', 'H2B.S', '?'];
+        if (exclude_variants.includes(variant_full) || variant_full.search("^[a-zA-Z0-9\._]+$") < 0)
+            return variant
         var variants_dict = {'cenH3_CENPA': 'cenH3',
                              'TS_H2A.1': 'H2A.1',
                              'TS_H2B.1': 'H2B.1',
@@ -16,13 +19,13 @@
                              'H3.Y.2': 'H3.Y',
                              'macroH2A.1': 'macroH2A',
                              'macroH2A.2': 'macroH2A'}
-        if (!exclude_variants.includes(variant.replace(/ /g, '_')))
-            if (variant.replace(/ /g, '_') in variants_dict)
-                return "<a href='/variant/" + variants_dict[variant.replace(/ /g, '_')] + "'>" + variant + "</a>";
-            else
-                return "<a href='/variant/" + variant.replace(/ /g, '_') + "'>" + variant + "</a>";
-        else
+        if (exclude_variants.includes(variant_full) || variant_full.search("^[a-zA-Z0-9\._]+$") < 0)
             return variant;
+        else
+            if (variant_full in variants_dict)
+                return "<a href='/variant/" + variants_dict[variant_full] + "'>" + variant + "</a>";
+            else
+                return "<a href='/variant/" + variant_full + "'>" + variant + "</a>";
     };
     function format_type(histone_type){
         if (histone_type)
