@@ -168,10 +168,10 @@
         if (pmids) {
             var pmids_list = pmids.split(" ");
             var links_str = "<a href='https://www.ncbi.nlm.nih.gov/pubmed/" + pmids_list[0] + "'>" + pmids_list[0] + "</a>";
-            if (pmids_list[0].search("^[0-9]+$" < 0))
-                links_str = "" + pmids_list[0];
+            if (pmids_list[0].search("^[0-9]+$") < 0)
+                links_str = pmids_list[0];
             for (i = 1; i < pmids_list.length; i++) {
-                if (pmids_list[i].search("^[0-9]+$" < 0))
+                if (pmids_list[i].search("^[0-9]+$") < 0)
                     links_str += "; " + pmids_list[i];
                 else
                     links_str += "; <a href='https://www.ncbi.nlm.nih.gov/pubmed/" + pmids_list[i] + "'>" + pmids_list[i] + "</a>";
