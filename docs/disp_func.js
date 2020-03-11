@@ -1,7 +1,7 @@
 <!--- <script type="text/javascript"> --->
     function format_variant(variant){
         var exclude_variants = ['', 'H1', 'H1.1', 'H1.2', 'H1.3', 'H1.4', 'H1.5', 'H10', 'H2.1', 'H2.2', 'H2A.2', 'H2A.J',
-                                'H2B.M', 'H2B.S '];
+                                'H2B.M', 'H2B.S', '?'];
         var variants_dict = {'cenH3_CENPA': 'cenH3',
                              'TS_H2A.1': 'H2A.1',
                              'TS_H2B.1': 'H2B.1',
