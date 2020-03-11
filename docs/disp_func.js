@@ -164,6 +164,17 @@
         else
             return refseq_id;
     };
+    function format_pmid(pmids){
+        if (pmids)
+            pmids_list = pmids.split(" ");
+            var links_str = pmids_list[0]
+            for (i = 1; i < pmids_list.length; i++) {
+                links_str += "<a href='https://www.ncbi.nlm.nih.gov/pubmed/" + pmids_list[i] + "'>" + pmids_list[i] + "</a> ";
+            }
+            return links_str;
+        else
+            return pmids;
+    };
     CsvToHtmlTable.init({
         csv_path: "https://intbio.org/hist_gene_prot/human_histones.csv",
         element: 'table-container',
@@ -171,6 +182,6 @@
         csv_options: {separator: ',', delimiter: '"'},
         datatables_options: {"paging": false} ,
         custom_formatting: [[0, format_type], [1, format_variant], [2, format_hgnc], [3, format_ncbi], [4, format_ensg],
-                            [5, format_enst], [6, format_ncbi_mrna], [7, format_ncbi_peptide]]
+                            [5, format_enst], [6, format_ncbi_mrna], [7, format_ncbi_peptide], [9, format_pmid]]
     });
 <!--- </script> --->
