@@ -187,7 +187,7 @@
         allow_download: true,
         csv_options: {separator: ',', delimiter: '"'},
         datatables_options: {"paging": false} ,
-        custom_formatting: [[0, format_type], [1, format_variant], [2, format_hgnc], [3, format_ncbi], [4, format_ensg],
-                            [5, format_enst], [6, format_ncbi_mrna], [7, format_ncbi_peptide], [9, format_pmid]]
+        custom_formatting: [[0, format_type], [1, format_variant], [3, format_hgnc], [4, format_ncbi], [5, format_ensg],
+                            [6, format_enst], [7, format_ncbi_mrna], [8, format_ncbi_peptide], [10, format_pmid]]
     });
 <!--- </script> --->
