@@ -8,6 +8,8 @@
                              'TS_H2B.1': 'H2B.1',
                              'canonical_H3.1': 'canonical_H3',
                              'canonical_H3.2': 'canonical_H3',
+                             'canonical_H2.1': 'canonical_H2',
+                             'canonical_H2.2': 'canonical_H2',
                              'H2A.B.1': 'H2A.B',
                              'H2A.B.2': 'H2A.B',
                              'H2A.B.3': 'H2A.B',
