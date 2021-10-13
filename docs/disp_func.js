@@ -2,14 +2,14 @@
     function format_variant(variant){
         var variant_full = variant.replace(/ /g, '_')
         var exclude_variants = ['', 'H1', 'H1.1', 'H1.2', 'H1.3', 'H1.4', 'H1.5', 'H10', 'H2.1', 'H2.2', 'H2A.2', 'H2A.J',
-                                'H2B.M', 'H2B.S', '?'];
+                                'H2B.M', 'H2B.S', '?','H1.12'];
         var variants_dict = {'cenH3_CENPA': 'cenH3',
                              'TS_H2A.1': 'H2A.1',
                              'TS_H2B.1': 'H2B.1',
                              'canonical_H3.1': 'canonical_H3',
                              'canonical_H3.2': 'canonical_H3',
-                             'canonical_H2.1': 'canonical_H2',
-                             'canonical_H2.2': 'canonical_H2',
+                             'canonical_H2A.1': 'canonical_H2A',
+                             'canonical_H2A.2': 'canonical_H2A',
                              'H2A.B.1': 'H2A.B',
                              'H2A.B.2': 'H2A.B',
                              'H2A.B.3': 'H2A.B',
@@ -69,6 +69,7 @@
                          'H2AC21': 'HGNC:20508',
                          'H2AJ': 'HGNC:14456',
                          'H2AW': 'HGNC:20507',
+                         'H2AC25': 'HGNC:20507',
                          'H2AX': 'HGNC:4739',
                          'H2AZ1': 'HGNC:4741',
                          'H2AZ2': 'HGNC:20664',
@@ -100,7 +101,7 @@
                          'H2BW1': 'HGNC:27252',
                          'H2BW2': 'HGNC:27867',
                          'H2BP6': 'HGNC:42633',
-                         'H2BE1': 'HGNC:53833',
+                         'H2BK1': 'HGNC:53833',
                          'H3C1': 'HGNC:4766',
                          'H3C2': 'HGNC:4776',
                          'H3C3': 'HGNC:4768',
@@ -137,7 +138,31 @@
                          'H4C13': 'HGNC:4791',
                          'H4C14': 'HGNC:4794',
                          'H4C15': 'HGNC:29607',
-                         'H4-16': 'HGNC:20510'}
+                         'H4C16': 'HGNC:20510',
+                         'H1-12P': 'HGNC:19163',
+                         'H2AC2P': 'HGNC:18720',
+                         'H2AC3P': 'HGNC:18804',
+                         'H2AC5P': 'HGNC:4728',
+                        'H2AC9P': 'HGNC:18805',
+                          'H2AC10P': 'HGNC:4732',
+                         'H2AL1MP':'HGNC:53961',
+                         'H2AL1Q',:'HGNC:53959',
+                         'H2AL3':'HGNC:53960',
+                         'H2AQ1P': 'HGNC:53962',
+                         'H2BC2P':'HGNC:18719',
+                         'H2BC16P':'HGNC:4754',
+                         'H2BC19P': 'HGNC:20517',
+                         'H2BC20P': 'HGNC:20516',
+                         'H2BC26':'HGNC:20514',
+                         'H2BC27P':'HGNC:20515',
+                         'H2BL1P': 'HGNC:54442',
+                         'H2BC12L':'HGNC:4762',
+                         'H2BL1P':'HGNC:54442',
+                         'H2BW3P': 'HGNC:44390',
+                         'H2BW4P':'HGNC:25757',                         
+                        'H3C5P': 'HGNC:54427',
+                        'H3C9P': 'HGNC:18982',
+                         'H4C10P': 'HGNC:4786'}
         if (hgnc_symbol)
             return "<a href='https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/" + hgnc_dict[hgnc_symbol] + "'>" + hgnc_symbol + "</a>";
         else
