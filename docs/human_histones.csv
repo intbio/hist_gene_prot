@@ -1,4 +1,4 @@
-Histone type,Histone variant,Canonical isoform,HGNC symbol,NCBI gene ID,Ensembl gene ID,Transcript stable ID,RefSeq mRNA ID,RefSeq peptide ID,Protein length,References
+Histone type,Histone variant,Clustered (canonical) isoform,HGNC symbol,NCBI gene ID,Ensembl gene ID,Transcript stable ID,RefSeq mRNA ID,RefSeq peptide ID,Protein length,References
 H1,H1.0,,H1-0,3005,ENSG00000189060,ENST00000340857,NM_005318,NP_005309,194,26689747
 H1,H1.1,,H1-1,3024,ENSG00000124610,ENST00000244573,NM_005325,NP_005316,215,26689747
 H1,H1.2,,H1-2,3006,ENSG00000187837,ENST00000343677,NM_005319,NP_005310,213,26689747
